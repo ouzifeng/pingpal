@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - PingPal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-chart-line"></i>
+          <span>PingPal</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="auth-main">
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <div class="auth-logo">
+              <i class="fas fa-chart-line"></i>
+              <span>PingPal</span>
+            </div>
+            <h1>Start monitoring today</h1>
+            <p>Create your account and get 14 days free</p>
+          </div>
+
+          <div class="auth-social">
+            <button class="social-btn google-btn">
+              <i class="fab fa-google"></i>
+              Sign up with Google
+            </button>
+            <button class="social-btn github-btn">
+              <i class="fab fa-github"></i>
+              Sign up with GitHub
+            </button>
+          </div>
+
+          <div class="auth-divider">
+            <span>or</span>
+          </div>
+
+          <form class="auth-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  placeholder="John"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company name (Optional)</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your company"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="password-input">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="Create a strong password"
+                />
+                <button
+                  type="button"
+                  class="password-toggle"
+                  onclick="togglePassword()"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="password-strength">
+                <div class="strength-meter">
+                  <div class="strength-bar"></div>
+                </div>
+                <small class="strength-text"
+                  >Use 8+ characters with letters, numbers & symbols</small
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+                placeholder="Confirm your password"
+              />
+            </div>
+
+            <div class="form-options">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" required />
+                <span class="checkmark"></span>
+                I agree to the
+                <a href="#" target="_blank">Terms of Service</a> and
+                <a href="#" target="_blank">Privacy Policy</a>
+              </label>
+            </div>
+
+            <div class="form-options">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" />
+                <span class="checkmark"></span>
+                Send me product updates and monitoring tips
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary auth-submit">
+              Create Account
+            </button>
+          </form>
+
+          <div class="auth-footer">
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
+          </div>
+        </div>
+
+        <div class="auth-benefits">
+          <h3>Why choose PingPal?</h3>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <i class="fas fa-rocket"></i>
+              <div>
+                <strong>Quick setup</strong>
+                <span>Start monitoring in under 2 minutes</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>99.9% uptime SLA</strong>
+                <span>Reliable monitoring you can trust</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-bell"></i>
+              <div>
+                <strong>Instant alerts</strong>
+                <span>Email, SMS, Slack, and webhook notifications</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <strong>Beautiful dashboards</strong>
+                <span>Visualize your uptime data with ease</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-users"></i>
+              <div>
+                <strong>Team collaboration</strong>
+                <span>Share access with your entire team</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trial-info">
+            <div class="trial-badge">
+              <i class="fas fa-gift"></i>
+              <div>
+                <strong>14-day free trial</strong>
+                <span>No credit card required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="auth-footer-minimal">
+      <div class="container">
+        <div class="footer-minimal-content">
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="contact.html">Support</a>
+          </div>
+          <p>&copy; 2024 PingPal. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById("password");
+        const toggleIcon = document.querySelector(".password-toggle i");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleIcon.classList.replace("fa-eye", "fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          toggleIcon.classList.replace("fa-eye-slash", "fa-eye");
+        }
+      }
+
+      // Password strength indicator
+      document
+        .getElementById("password")
+        .addEventListener("input", function (e) {
+          const password = e.target.value;
+          const strengthBar = document.querySelector(".strength-bar");
+          const strengthText = document.querySelector(".strength-text");
+
+          let strength = 0;
+          let feedback = "";
+
+          if (password.length >= 8) strength++;
+          if (/[a-z]/.test(password)) strength++;
+          if (/[A-Z]/.test(password)) strength++;
+          if (/[0-9]/.test(password)) strength++;
+          if (/[^A-Za-z0-9]/.test(password)) strength++;
+
+          const strengthColors = [
+            "#ef4444",
+            "#f59e0b",
+            "#eab308",
+            "#10b981",
+            "#059669",
+          ];
+          const strengthTexts = ["Very weak", "Weak", "Fair", "Good", "Strong"];
+
+          if (password.length === 0) {
+            strengthBar.style.width = "0%";
+            strengthBar.style.backgroundColor = "transparent";
+            strengthText.textContent =
+              "Use 8+ characters with letters, numbers & symbols";
+          } else {
+            const percentage = (strength / 5) * 100;
+            strengthBar.style.width = percentage + "%";
+            strengthBar.style.backgroundColor =
+              strengthColors[strength - 1] || strengthColors[0];
+            strengthText.textContent =
+              strengthTexts[strength - 1] || strengthTexts[0];
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - PingPal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-chart-line"></i>
+          <span>PingPal</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="#" class="nav-link cta-button">Start Free Trial</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Contact Hero -->
+      <section class="contact-hero">
+        <div class="container">
+          <div class="contact-hero-content">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-subtitle">
+              Have questions about PingPal? We're here to help. Reach out to our
+              team and we'll get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+              <h2>Send us a Message</h2>
+              <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company (Optional)</label>
+                  <input type="text" id="company" name="company" />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a topic</option>
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing Question</option>
+                    <option value="feature">Feature Request</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell us how we can help you..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <h3>Other Ways to Reach Us</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email Support</h4>
+                  <p>support@pingpal.com</p>
+                  <p>We typically respond within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Live Chat</h4>
+                  <p>Available 9 AM - 6 PM EST</p>
+                  <p>Click the chat widget in the bottom right</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone Support</h4>
+                  <p>+1 (555) 123-4567</p>
+                  <p>Enterprise customers only</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-slack"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Community Slack</h4>
+                  <p>Join our community</p>
+                  <p>Connect with other PingPal users</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Documentation</h4>
+                  <p>docs.pingpal.com</p>
+                  <p>Comprehensive guides and API docs</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-bug"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Bug Reports</h4>
+                  <p>github.com/pingpal/issues</p>
+                  <p>Report bugs and request features</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Office Section -->
+      <section class="office-section">
+        <div class="container">
+          <h2 class="section-title">Our Office</h2>
+          <div class="office-content">
+            <div class="office-info">
+              <h3>San Francisco Headquarters</h3>
+              <div class="office-details">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Startup Street,
+                  Suite 400<br />San Francisco, CA 94105
+                </p>
+                <p>
+                  <i class="fas fa-clock"></i> Monday - Friday, 9 AM - 6 PM PST
+                </p>
+                <p><i class="fas fa-envelope"></i> hello@pingpal.com</p>
+              </div>
+            </div>
+            <div class="office-map">
+              <div class="map-placeholder">
+                <i class="fas fa-map"></i>
+                <p>Interactive Map</p>
+                <small>Located in the heart of SOMA</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Start Monitoring?</h2>
+            <p>
+              Don't wait for your next outage. Start protecting your services
+              with PingPal today.
+            </p>
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-primary">Start Free Trial</a>
+              <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+            </div>
+            <p class="cta-note">
+              No credit card required • 14-day free trial • Cancel anytime
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-chart-line"></i>
+              <span>PingPal</span>
+            </div>
+            <p>Uptime monitoring made simple for modern teams.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">API Docs</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 PingPal. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
